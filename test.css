@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outer-frame, .carousel, .image-container, body {
+    padding: 0;
+    margin: 0;
+}
+
+.outer-frame {
+    height: 100vh;
+    max-width: 60vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.image-container, .image {
+    height: 100%;
+    width: 60vw;
+    background-color: black;
+    object-fit: contain;
+}
+
+.buttons{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons:hover {
+    opacity: 0.7;
+    background-color: none;
+    color: white;
+    transition: "all 0.5s";
+    /* cursor: pointer; */
+}
+
+#leftButton {
+    position: absolute;
+    left: 0;
+    right: 90%;
+}
+
+#rightButton {
+    position: absolute;
+    left: 90%;
+    right: 0;
+}
